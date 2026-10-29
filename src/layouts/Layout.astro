@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Some Useful stuff that I keep forgetting the domains of"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+
+    <title>My Useful Stuff</title>
+  </head>
+  <body class="antialiased bg-stone-200">
+    <a
+      tabindex="0"
+      href="#main-content"
+      role="button"
+      class="inline-flex absolute top-0 left-0 z-20 items-center py-2 px-4 mt-2 ml-2 bg-white opacity-100 -translate-y-14 dark:bg-black focus:translate-y-0 bw-button z-200"
+    >
+      Skip to Content
+    </a>
+    <slot />
+  </body>
+</html>

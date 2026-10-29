@@ -1,16 +1,35 @@
 ---
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <main class="mx-auto max-w-3xl mt-8">
+    <h1 class="text-3xl font-bold">Useful Sites</h1>
+    <ul class="list-none flex flex-col gap-8 mt-12">
+      <li>
+        <a href="https://simplecards.pages.dev" class="underline text-2xl">
+          Simple Flashcards
+        </a>
+        <p class="mt-1">
+        Simple flashcard sheet editor
+        </p>
+      </li>
+      <li>
+        <a href="https://violinpracticecards.com" class="underline text-2xl">
+        Violin Practice Cards
+        </a>
+        <p class="mt-1">
+        Violin practice cards companion recordings
+        </p>
+      </li>
+      <li>
+        <a href="https://violinfingering.com" class="underline text-2xl">
+        Violin Fingering
+        </a>
+        <p class="mt-1">
+        Violin fingering diagrams and exercises
+        </p>
+      </li>
+    </ul>
+  </main>
+</Layout>
